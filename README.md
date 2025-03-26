@@ -1,24 +1,39 @@
-# README
+# Q&A サイト
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+このプロジェクトは、Udemy の『はじめての Ruby on Rails 入門-Ruby と Rails を基礎から学びウェブアプリケーションをネットに公開しよう』のコースを参考にしてハンズオン形式で作成した Q&A サイトです。
 
-Things you may want to cover:
+https://www.udemy.com/course/the-ultimate-ruby-on-rails-bootcamp/?couponCode=CM240325
 
-* Ruby version
+## 学んだこと
 
-* System dependencies
+- ruby の文法
+  - ruby の基本的な文法事項
+- rails の基礎
+  - rails を用いた CRUD 処理の方法
+  - MVC アーキテクチャについて
 
-* Configuration
+## Q&A アプリケーションの起動方法
 
-* Database creation
+1. このリポジトリをクローンする．
 
-* Database initialization
+```bash
+git clone git@github.com:kondai24/rails-tutorial.git
+```
 
-* How to run the test suite
+2. 必要な Gem をインストールする．
 
-* Services (job queues, cache servers, search engines, etc.)
+```bash
+bundle install
+```
 
-* Deployment instructions
+3. db のセットアップする
 
-* ...
+```bash
+rails db:migrate
+```
+
+4. ローカルホストに立ち上げる．
+
+```bash
+rails s
+```
